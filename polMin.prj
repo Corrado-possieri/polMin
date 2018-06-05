@@ -1,0 +1,115 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration file="/Users/corrado/Documents/Universita/Dottorato/Articoli/InProgress/PolynomialMinimiz/Math/polMin/PolMinPack/Version0/polMin.prj" location="/Users/corrado/Documents/Universita/Dottorato/Articoli/InProgress/PolynomialMinimiz/Math/polMin/PolMinPack/Version0" name="polMin" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>polMin</param.appname>
+    <param.authnamewatermark>Corrado Possieri</param.authnamewatermark>
+    <param.email>corrado.possieri@polito.it</param.email>
+    <param.company>Politecnico di Torino</param.company>
+    <param.summary>Constrained/unconstrained polynomial minimization</param.summary>
+    <param.description>polMin implements the block coordinate descent method to solve nonconvex constrained and unconstrained polynomial minimization problems.</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}/polMin.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid>b44b72e5-8ed1-4972-9ddb-f9a5e704a3aa</param.guid>
+    <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
+% from packaging.  Excludes should be listed relative to the toolbox folder.
+% Some examples of how to specify excludes are provided below:
+%
+% A single file in the toolbox folder:
+% .svn
+%
+% A single file in a subfolder of the toolbox folder:
+% example/.svn
+%
+% All files in a subfolder of the toolbox folder:
+% example/*
+%
+% All files of a certain name in all subfolders of the toolbox folder:
+% **/.svn
+%
+% All files matching a pattern in all subfolders of the toolbox folder:
+% **/*.bak
+%
+
+.DS_Store</param.exclude.filters>
+    <param.examples />
+    <param.demosxml />
+    <param.apps />
+    <param.docs />
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.screenshot />
+      <param.version />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.examples />
+      <param.demosxml />
+      <param.apps />
+      <param.docs />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+    </unset>
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}/Source</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}/Source/findFeas.m</file>
+      <file>${PROJECT_ROOT}/Source/genScalarProb.m</file>
+      <file>${PROJECT_ROOT}/Source/minScalPol.m</file>
+      <file>${PROJECT_ROOT}/Source/polMin.m</file>
+      <file>${PROJECT_ROOT}/Source/polminset.m</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included>
+      <file>/Users/corrado/Documents/MATLAB/Add-Ons/Toolboxes/polMin/code/genScalarProb.m</file>
+      <file>/Users/corrado/Documents/MATLAB/Add-Ons/Toolboxes/polMin/code/minScalPol.m</file>
+    </fileset.depfun.included>
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/corrado/Documents/Universita/Dottorato/Articoli/InProgress/PolynomialMinimiz/Math/polMin/PolMinPack/Version0" name="polMin.mltbx" optional="false">/Users/corrado/Documents/Universita/Dottorato/Articoli/InProgress/PolynomialMinimiz/Math/polMin/PolMinPack/Version0/polMin.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2017a.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.12.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
